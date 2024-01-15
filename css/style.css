@@ -1,0 +1,616 @@
+html {
+  font-size: 62.5%;
+}
+
+/*
+- #FCA424
+- #0DD39D
+- #1A1A1A
+- #CDCDCD
+- #FEFEFE
+*/
+*,
+*::after,
+*::before {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  max-width: 1200px;
+  margin: 3.2rem auto;
+  font-family: "Inter", sans-serif;
+  font-weight: 400;
+}
+/*******************************/
+/** General classes **/
+/*******************************/
+
+.grid {
+  display: grid;
+}
+
+.grid-col-2 {
+  grid-template-columns: repeat(2, 1fr);
+}
+.grid-col-2-min {
+  grid-template-columns: 100px 1fr;
+}
+.grid-col-custom-2 {
+  grid-template-columns: 31.5rem 1fr;
+}
+.grid-col-3 {
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2.4rem;
+}
+
+.flex-center {
+  display: flex;
+  gap: 0.6rem;
+  align-items: center;
+  justify-content: center;
+}
+
+.margin-bottom-md {
+  margin-bottom: 3.2rem;
+}
+
+.btn {
+  font-size: 1.4rem;
+  border: none;
+  cursor: pointer;
+  color: white;
+  padding: 0.8rem 1.8rem;
+}
+.btn-primary {
+  background: linear-gradient(rgb(26, 26, 26, 0.287), rgb(26, 26, 26, 0.287));
+  border-radius: 7px;
+  transition: all 0.2s;
+}
+.btn-primary:hover {
+  background: linear-gradient(rgb(26, 26, 26, 0.387), rgb(26, 26, 26, 0.387));
+}
+
+.btn-progress {
+  background: #fca424;
+  text-transform: uppercase;
+  font-weight: 400;
+  border-radius: 4px;
+  padding: 0.8rem 1.8rem;
+  transition: all 0.2s;
+}
+
+.btn-progress:hover {
+  background: #fca624db;
+}
+
+.btn-secondary {
+  background: #0dd39d;
+  font-weight: 400;
+  color: #fefefe;
+  border-radius: 4px;
+  padding: 0.8rem 1.8rem;
+  transition: all 0.2s;
+}
+
+.btn-secondary:hover {
+  background: rgba(13, 211, 158, 0.842);
+}
+
+/*******************************/
+/** main header section **/
+/*******************************/
+
+.header {
+  height: 28rem;
+  background-image: linear-gradient(rgb(26, 26, 26, 0.6), rgb(26, 26, 26, 0.6)),
+    url(../img/mountain.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding: 2.4rem 4.2rem;
+  box-shadow: 0 0 25px 0 rgb(171 171 171 / 33%);
+  border-top-left-radius: 7px;
+  border-top-right-radius: 7px;
+}
+
+.header-main {
+  display: flex;
+  justify-content: space-between;
+}
+
+.logo-part {
+  display: flex;
+  gap: 0.4rem;
+  font-size: 1.4rem;
+  color: #fefefe;
+}
+
+.logo-part img {
+  transform: rotate(45deg);
+  width: 1.8rem;
+  height: 1.8rem;
+  filter: invert(100%);
+}
+
+.logo-part .logo-txt {
+  font-weight: 600;
+}
+
+.second-part {
+  display: flex;
+  gap: 2.4rem;
+  align-items: center;
+}
+
+.notification-icon {
+  color: white;
+  height: 2.4rem;
+  width: 2.4rem;
+  position: relative;
+  cursor: pointer;
+}
+
+.notification-icon::before {
+  content: "";
+  position: absolute;
+  background-color: #fca424;
+  width: 0.7rem;
+  height: 0.7rem;
+  z-index: 12;
+  border-radius: 25px;
+  cursor: pointer;
+  transform: translate(14px, 5px);
+}
+
+.user-img-part {
+  height: 2.8rem;
+  width: 2.8rem;
+}
+
+.user-img {
+  width: 100%;
+  height: 100%;
+  border-radius: 5px;
+  object-fit: cover;
+}
+.user-img:hover {
+  transition: all 0.2s;
+  transform: scale(1.1);
+}
+
+/*******************************/
+/** profile section **/
+/*******************************/
+
+.profile {
+  margin-top: 4.2rem;
+  display: flex;
+  justify-content: space-between;
+}
+
+.profile-section {
+  width: 64rem;
+  position: relative;
+}
+
+.profile-img {
+  height: 22rem;
+  width: 22rem;
+  position: absolute;
+  top: 0;
+  left: 0;
+  box-shadow: 0px 0px 25px 0px rgba(0, 0, 0, 0.2);
+  background: url(../img/user.avif);
+  background-size: cover;
+  background-repeat: no-repeat;
+  border-radius: 7px;
+}
+
+.info {
+  color: #fefefe;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  transform: translate(25rem, 0);
+}
+
+.heading-primary {
+  font-size: 2.4rem;
+  font-weight: 500;
+  letter-spacing: 1px;
+}
+.info-items {
+  display: flex;
+  font-size: 1.2rem;
+}
+
+.info-heading {
+  color: #fefefed1;
+}
+
+.profile-progress {
+  padding: 2.4rem 3.2rem;
+  display: flex;
+  height: fit-content;
+  gap: 1.8rem;
+  border-radius: 5px;
+  background: linear-gradient(rgb(254, 254, 254, 0.2), rgb(254, 254, 254, 0.2));
+}
+
+.progress {
+  width: 8.2rem;
+  height: 8.2rem;
+  border-radius: 50px;
+  padding: 1.2rem;
+  background-color: transparent;
+  border: 4px solid #fca424;
+  border-top-color: transparent;
+  transform: rotate(45deg);
+}
+
+.progress-min {
+  width: 5.2rem;
+  height: 5.2rem;
+  border-radius: 50px;
+
+  padding: 1.2rem;
+  background: linear-gradient(rgb(254, 254, 254, 0.2), rgb(254, 254, 254, 0.2));
+  transform: rotate(-45deg);
+}
+
+.progress-info {
+  display: flex;
+  flex-direction: column;
+  gap: 0.4rem;
+}
+
+.progress-text {
+  font-size: 1.4rem;
+  color: #fefefe;
+  font-weight: 500;
+}
+
+.progress-title {
+  font-size: 1.6rem;
+  font-weight: 500;
+  color: #fefefe;
+}
+.progress-title-sm {
+  font-size: 1.2rem;
+  font-weight: 400;
+  margin-bottom: 1rem;
+  color: #fefefe;
+}
+
+/*******************************/
+/** Dashboard section **/
+/*******************************/
+
+.dashboard {
+  box-shadow: 0 0 25px 0 rgb(171 171 171 / 33%);
+
+  border-bottom-right-radius: 7px;
+  border-bottom-left-radius: 7px;
+  overflow: hidden;
+}
+
+.dashboard-full {
+  box-shadow: inset 0 0 50px 20px white;
+}
+
+/*******************************/
+/** Dashboard family section **/
+/*******************************/
+
+.family {
+  box-shadow: inset 0 0 50px 20px white;
+  padding: 4.2rem;
+  border-right: 1px solid rgba(205, 205, 205, 0.456);
+  border-bottom-left-radius: 7px;
+}
+
+.family-title {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 2.2rem 0;
+  text-transform: uppercase;
+  padding-bottom: 1.6rem;
+  border-bottom: 1px solid rgba(205, 205, 205, 0.456);
+}
+.family-title .title {
+  font-size: 1.4rem;
+  font-weight: 600;
+}
+.family-title img {
+  width: 1.6rem;
+  cursor: pointer;
+}
+
+.family-persons-img-title {
+  font-size: 1.2rem;
+  text-transform: uppercase;
+  font-weight: 500;
+  color: #cdcdcd;
+  margin-bottom: 1.6rem;
+}
+.family-persons-imgs {
+  margin-bottom: 1.4rem;
+  display: flex;
+  gap: 1.6rem;
+}
+
+.family-persons {
+  border-radius: 25px;
+  width: 4.2rem;
+}
+
+.info-my {
+  transform: translate(0, 0);
+  color: black;
+}
+
+.my-info-items {
+  display: flex;
+  gap: 0.4rem;
+  flex-direction: column;
+}
+
+.my-info-title {
+  color: #1a1a1a;
+  font-size: 1.2rem;
+  font-weight: 500;
+}
+
+.my-info-heading {
+  font-size: 1.2rem;
+  text-transform: uppercase;
+  color: #cdcdcd;
+  font-weight: 500;
+}
+
+/*******************************/
+/** Dashboard nagigation section **/
+/*******************************/
+
+.navigation {
+  display: flex;
+  border-bottom: 1px solid rgba(205, 205, 205, 0.456);
+}
+
+.navigation-list {
+  list-style: none;
+  display: flex;
+  gap: 3.2rem;
+}
+
+.navigation-items {
+  font-size: 1.4rem;
+  padding: 2rem 0;
+  text-transform: uppercase;
+  font-weight: 500;
+  color: #cdcdcd;
+}
+.navigation-items:first-child {
+  color: #1a1a1a;
+  border-bottom: 3px solid #fca424;
+  margin-left: 1.8rem;
+}
+
+.navigation-buttom {
+  margin: auto;
+}
+
+.navigation-btn-icon {
+  transform: rotate(-45deg);
+}
+
+/*******************************/
+/** Dashboard detail section **/
+/*******************************/
+
+.dashboard-detais {
+  padding: 3.6rem 1.8rem;
+}
+
+.claim-details {
+  padding-left: 1.8rem;
+}
+
+.claims {
+  padding: 2.4rem 1.2rem;
+  display: flex;
+}
+.claims .number {
+  font-size: 4.2rem;
+  font-weight: 300;
+  padding: 0 1.8rem 0;
+  border-right: 1px solid #cdcdcd;
+}
+
+.claim-title {
+  font-size: 1.4rem;
+  margin-bottom: 0.8rem;
+  text-transform: uppercase;
+  color: #cdcdcd;
+}
+
+.claim-gallery {
+  display: flex;
+}
+
+.claim-img {
+  width: 3.2rem;
+  height: 3.2rem;
+  border-radius: 25px;
+  background-color: #0dd39d;
+  border: 2px solid #fefefe;
+  cursor: pointer;
+}
+
+.claim-img:hover {
+  z-index: 12;
+  transition: all 0.2s;
+}
+
+.claim-img:nth-child(2) {
+  transform: translate(-10px, 0);
+}
+.claim-img:nth-child(3) {
+  transform: translate(-20px, 0);
+}
+.claim-img:nth-child(4) {
+  transform: translate(-30px, 0);
+}
+
+.child,
+.child-profile {
+  border-radius: 7px;
+  box-shadow: 0 0 15px -4px #e8e8e8;
+}
+.child-profile:nth-child(1) {
+  grid-column: 1/3;
+}
+.child-profile:nth-child(2) {
+  grid-column: 3;
+  grid-row: 1/4;
+}
+
+.child-profile:nth-child(3) {
+  grid-column: 1/3;
+}
+.child-profile:nth-child(4) {
+  grid-column: 1/3;
+}
+
+.child-profile {
+  padding: 1.4rem;
+  position: relative;
+}
+
+.child-per-img img {
+  height: 10rem;
+  border-radius: 5px;
+}
+
+.child-profile-details {
+  padding: 0 1.2rem;
+}
+
+.profile-name {
+  font-size: 1.6rem;
+  text-transform: uppercase;
+  font-weight: 600;
+  margin-bottom: 1.2rem;
+}
+.profile-info {
+  transform: translate(0);
+  color: black;
+  display: flex;
+  gap: 1rem;
+}
+
+.profile-info .profile-info-heading {
+  color: #a3a3a3;
+  font-weight: 500;
+}
+
+.profile-info .profile-info-title {
+  color: #c3c3c3;
+}
+
+.profile-info-icon {
+  color: #a3a3a3;
+  margin-right: 0.6rem;
+  height: 1.4rem;
+  width: 1.4rem;
+}
+
+.position-btn {
+  position: absolute;
+  right: 1.4rem;
+  bottom: 1.4rem;
+}
+
+.activity-section {
+  padding: 2.2rem;
+}
+.activity {
+  font-size: 1.4rem;
+  text-transform: uppercase;
+  color: #a3a3a3;
+  padding-bottom: 1.2rem;
+  border-bottom: 1px solid #cdcdcd;
+  margin-bottom: 1.6rem;
+}
+.activity-schedule {
+  display: flex;
+  flex-direction: column;
+  gap: 1.4rem;
+  position: relative;
+}
+.activity-list {
+  display: flex;
+  gap: 1.4em;
+}
+
+.avtivity-dot {
+  width: 12px;
+  height: 9px;
+  background-color: red;
+  box-shadow: 0 0 5px 0 red;
+  border-radius: 25px;
+  position: relative;
+}
+.green {
+  background-color: green;
+  box-shadow: 0 0 5px 0 green;
+}
+.yellow {
+  background-color: yellow;
+  box-shadow: 0 0 5px 0 yellow;
+}
+.blue {
+  background-color: blue;
+  box-shadow: 0 0 5px 0 blue;
+}
+
+.avtivity-dot::before {
+  position: absolute;
+  height: 7.8rem;
+  background-color: #dedede;
+  width: 0.8px;
+  content: "";
+  top: 9px;
+  left: 4.5px;
+}
+
+.activity-details {
+  display: flex;
+  flex-direction: column;
+  gap: 0.6rem;
+}
+
+.avtivity-detail-title {
+  font-size: 1.4rem;
+  font-weight: 600;
+}
+.activity-detail-desc {
+  font-size: 1.2rem;
+  color: #a3a3a3;
+}
+.activity-time {
+  color: #cdcdcd;
+  font-size: 1.2rem;
+}
+
+.activity-scroll {
+  width: 0.6rem;
+  height: 2.4rem;
+  background-color: #fca424;
+  border-radius: 4px;
+  position: absolute;
+  top: 15rem;
+  right: 0;
+}

@@ -1,9 +1,357 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
-  </head>
-  <body></body>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Document</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+  <header class="header">
+    <div class="header-main">
+      <div class="logo-part">
+        <img src="img/logo.png" alt="this is logo">
+        <p class="logo-txt">SKS Funding</p>
+      </div>
+      <div class="second-part">
+        <button class="btn btn-primary">Need Help</button>
+        <div class="notification">
+          <ion-icon class="notification-icon" name="notifications-outline"></ion-icon>
+        </div>
+        <div class="user-img-part">
+          <img class="user-img" src="img/user.avif" alt="this is user img">
+        </div>
+      </div>
+    </div>
+    <div class="profile">
+      <div class="profile-section">
+        <div class="profile-info">
+          <div class="profile-img">
+          </div>
+          <div class="info">
+            <h1 class="heading-primary">
+              Hii, Markus good morning 👋
+            </h1>
+            <div class="info-items">
+              <p class="info-heading">Email -&nbsp;</p>
+              <p class="info-title">markus1234@gmail.com</p>
+            </div>
+            <div class="info-items">
+              <p class="info-heading">Phone -&nbsp; </p>
+              <p class="info-title">+91 7898979856</p>
+            </div>
+            <div class="info-items">
+              <p class="info-heading">Address -&nbsp;</p>
+              <p class="info-title">Apt. 198 61103 Borer Pass, North Lovellaborough</p>
+            </div>
+            <div class="info-items">
+              <p class="info-heading">Plan -&nbsp;</p>
+              <p class="info-title">$500</p>
+            </div>
+            <div class="info-items">
+              <p class="info-heading">Joined -&nbsp;</p>
+              <p class="info-title">Mon 22nd Fed 2019</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="profile-progress">
+        <div class="progress flex-center">
+          <div class="progress-min flex-center">
+            <p class="progress-text">75%</p>
+          </div>
+        </div>
+        <div class="progress-info">
+          <p class="progress-title">
+            Profile-completion
+          </p>
+          <p class="progress-title-sm">
+            Please complete profile
+          </p>
+          <button class="btn btn-progress">
+            Complete
+          </button>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <section class="dashboard grid grid-col-custom-2">
+    <div class="family">
+      <div class="family-title">
+        <p class="title">About my family</p>
+        <img src="img/dots.png" alt="menu">
+      </div>
+      <div class="family-persons-list">
+        <p class="family-persons-img-title">Covered Persons</p>
+        <div class="family-persons-imgs">
+          <img class="family-persons" src="img/family-person-1.avif" alt="this is family img">
+          <img class="family-persons" src="img/family-person-5.avif" alt="this is family img">
+        </div>
+      </div>
+      <div class="family-persons-list">
+        <p class="family-persons-img-title">Benificiary Persons</p>
+        <div class="family-persons-imgs">
+          <img class="family-persons" src="img/family-person-2.avif" alt="this is family img">
+          <img class="family-persons" src="img/family-person-4.avif" alt="this is family img">
+          <img class="family-persons" src="img/family-person-6.avif" alt="this is family img">
+        </div>
+      </div>
+      <div class="family-persons-list">
+        <p class="family-persons-img-title">Emergerncy Persons</p>
+        <div class="family-persons-imgs">
+          <img class="family-persons" src="img/family-person-7.avif" alt="this is family img">
+          <img class="family-persons" src="img/family-person-8.avif" alt="this is family img">
+          <img class="family-persons" src="img/family-person-9.avif" alt="this is family img">
+          <img class="family-persons" src="img/family-person-10.avif" alt="this is family img">
+        </div>
+      </div>
+
+      <div class="family-title">
+        <h1 class="title">About me</h1>
+        <img src="img/dots.png" alt="menu">
+
+      </div>
+
+      <div class="info info-my">
+        <div class="my-info-items">
+          <p class="my-info-heading">Email</p>
+          <p class="my-info-title">markus1234@gmail.com</p>
+        </div>
+        <div class="my-info-items">
+          <p class="my-info-heading">Phone</p>
+          <p class="my-info-title">+91 7898979856</p>
+        </div>
+        <div class="my-info-items">
+          <p class="my-info-heading">Address</p>
+          <p class="my-info-title"> North Lovellaborough</p>
+        </div>
+        <div class="my-info-items">
+          <p class="my-info-heading">Plan</p>
+          <p class="my-info-title">$500</p>
+        </div>
+        <div class="my-info-items">
+          <p class="my-info-heading">Joined</p>
+          <p class="my-info-title">Mon 22nd Fed 2019</p>
+        </div>
+      </div>
+    </div>
+    <div class="dashboard-full">
+      <nav class="navigation">
+        <ul class="navigation-list">
+          <li class="navigation-items flex-center">
+            <ion-icon name="home-outline"></ion-icon>
+            <p>dashboard</p>
+          </li>
+          <li class="navigation-items">New classes</li>
+          <li class="navigation-items">Completed classes</li>
+          <li class="navigation-items">Past classes</li>
+          <li class="navigation-items">Members</li>
+        </ul>
+        <div class="navigation-buttom flex-center">
+          <button class="btn btn-secondary flex-center"><ion-icon name="unlink-outline"
+              class="navigation-btn-icon"></ion-icon>
+            <p>CLAIM</p>
+          </button>
+        </div>
+      </nav>
+      <div class="dashboard-detais">
+        <div class="grid grid-col-3 margin-bottom-md">
+          <div class="child claims ">
+            <div class="number">23</div>
+            <div class="claim-details">
+              <div class="claim-title">New claims</div>
+              <div class="claim-gallery">
+                <img class="claim-img" src="img/family-person-7.avif" alt="this is claim img">
+                <img class="claim-img" src="img/family-person-8.avif" alt="this is claim img">
+                <img class="claim-img" src="img/family-person-9.avif" alt="this is claim img">
+                <span class="claim-img flex-center">32+</span>
+              </div>
+            </div>
+          </div>
+          <div class="child claims ">
+            <div class="number">76</div>
+            <div class="claim-details">
+              <div class="claim-title">New Members</div>
+              <div class="claim-gallery">
+                <img class="claim-img" src="img/family-person-7.avif" alt="this is claim img">
+                <img class="claim-img" src="img/family-person-8.avif" alt="this is claim img">
+                <img class="claim-img" src="img/family-person-9.avif" alt="this is claim img">
+                <span class="claim-img flex-center">32+</span>
+              </div>
+            </div>
+          </div>
+          <div class="child claims">
+            <div class="number">102</div>
+            <div class="claim-details">
+              <div class="claim-title">Total claims</div>
+              <div class="claim-gallery">
+                <img class="claim-img" src="img/family-person-7.avif" alt="this is claim img">
+                <img class="claim-img" src="img/family-person-8.avif" alt="this is claim img">
+                <img class="claim-img" src="img/family-person-9.avif" alt="this is claim img">
+                <span class="claim-img flex-center">32+</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="grid grid-col-3">
+          <div class="child-profile grid grid-col-2-min">
+            <div class="child-per-img">
+              <img src="img/family-person-13.avif" alt="this is person">
+            </div>
+            <div class="child-profile-details">
+              <p class="profile-name">Ameelia kimani</p>
+              <div class="info profile-info">
+                <div class="info-items">
+                  <ion-icon class="profile-info-icon" name="calendar-outline"></ion-icon>
+                  <p class="info-heading profile-info-heading">Field -&nbsp;</p>
+                  <p class="info-title profile-info-title">Thus, Jul 10, 2018 7:30 EDT</p>
+                </div>
+                <div class="info-items">
+                  <ion-icon class="profile-info-icon" name="calendar-outline"></ion-icon>
+                  <p class="info-heading profile-info-heading">Due -&nbsp;</p>
+                  <p class="info-title profile-info-title">Thus, Jul 10, 2019 7:30 EDT</p>
+                </div>
+                <div class="info-items">
+                  <ion-icon class="profile-info-icon" name="location-outline"></ion-icon>
+                  <p class="info-heading profile-info-heading">Address -&nbsp;</p>
+                  <p class="info-title profile-info-title">Apt. 243 668 Goyette Lodge</p>
+                </div>
+              </div>
+            </div>
+            <button class="btn position-btn btn-progress  flex-center"><ion-icon name="unlink-outline"
+                class="navigation-btn-icon"></ion-icon>
+              <p>Pay</p>
+            </button>
+          </div>
+
+          <div class="child-profile activity-section">
+            <p class="activity">Activity</p>
+            <div class="activity-schedule">
+              <div class="activity-scroll"></div>
+              <div class="activity-list">
+                <div class="avtivity-dot yellow"></div>
+                <div class="activity-details">
+                  <p class="avtivity-detail-title">
+                    Claimed $20000
+                  </p>
+                  <p class="activity-detail-desc">
+                    23 members are got claimed in washington DC.
+                  </p>
+                  <p class="activity-time">05:50pm</p>
+                </div>
+              </div>
+              <div class="activity-list">
+                <div class="avtivity-dot"></div>
+                <div class="activity-details">
+                  <p class="avtivity-detail-title">
+                    102 new members
+                  </p>
+                  <p class="activity-detail-desc">
+                    We have 102 registrations check out their profiles
+                  </p>
+                  <p class="activity-time">05:50pm</p>
+                </div>
+              </div>
+              <div class="activity-list">
+                <div class="avtivity-dot blue"></div>
+                <div class="activity-details">
+                  <p class="avtivity-detail-title">
+                    3 claims are waiting
+                  </p>
+                  <p class="activity-detail-desc">
+                    Please contribute them ,they are waiting for your help
+                  </p>
+                  <p class="activity-time">05:50pm</p>
+                </div>
+              </div>
+              <div class="activity-list">
+                <div class="avtivity-dot green"></div>
+                <div class="activity-details">
+                  <p class="avtivity-detail-title">
+                    102 new members
+                  </p>
+                  <p class="activity-detail-desc">
+                    We have 102 registrations check out their profiles
+                  </p>
+                  <p class="activity-time">05:50pm</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="child-profile grid grid-col-2-min">
+            <div class="child-per-img">
+              <img src="img/family-person-12.avif" alt="this is person">
+            </div>
+            <div class="child-profile-details">
+              <p class="profile-name">Genva juma</p>
+              <div class="info profile-info">
+                <div class="info-items">
+                  <ion-icon class="profile-info-icon" name="calendar-outline"></ion-icon>
+                  <p class="info-heading profile-info-heading">Field -&nbsp;</p>
+                  <p class="info-title profile-info-title">Thus, Jul 10, 2018 7:30 EDT</p>
+                </div>
+                <div class="info-items">
+                  <ion-icon class="profile-info-icon" name="calendar-outline"></ion-icon>
+                  <p class="info-heading profile-info-heading">Due -&nbsp;</p>
+                  <p class="info-title profile-info-title">Thus, Jul 10, 2019 7:30 EDT</p>
+                </div>
+                <div class="info-items">
+                  <ion-icon class="profile-info-icon" name="location-outline"></ion-icon>
+                  <p class="info-heading profile-info-heading">Address -&nbsp;</p>
+                  <p class="info-title profile-info-title">Apt. 243 668 Goyette Lodge</p>
+                </div>
+              </div>
+              <button class="btn position-btn btn-progress  flex-center"><ion-icon name="unlink-outline"
+                  class="navigation-btn-icon"></ion-icon>
+                <p>Pay</p>
+              </button>
+            </div>
+
+          </div>
+          <div class="child-profile grid grid-col-2-min">
+            <div class="child-per-img">
+              <img src="img/family-person-10.avif" alt="this is person">
+            </div>
+            <div class="child-profile-details">
+              <p class="profile-name">therock vachira</p>
+              <div class="info profile-info">
+                <div class="info-items">
+                  <ion-icon class="profile-info-icon" name="calendar-outline"></ion-icon>
+                  <p class="info-heading profile-info-heading">Field -&nbsp;</p>
+                  <p class="info-title profile-info-title">Thus, Jul 10, 2018 7:30 EDT</p>
+                </div>
+                <div class="info-items">
+                  <ion-icon class="profile-info-icon" name="calendar-outline"></ion-icon>
+                  <p class="info-heading profile-info-heading">Due -&nbsp;</p>
+                  <p class="info-title profile-info-title">Thus, Jul 10, 2019 7:30 EDT</p>
+                </div>
+                <div class="info-items">
+                  <ion-icon class="profile-info-icon" name="location-outline"></ion-icon>
+                  <p class="info-heading profile-info-heading">Address -&nbsp;</p>
+                  <p class="info-title profile-info-title">Apt. 243 668 Goyette Lodge</p>
+                </div>
+              </div>
+              <button class="btn position-btn btn-progress  flex-center"><ion-icon name="unlink-outline"
+                  class="navigation-btn-icon"></ion-icon>
+                <p>Pay</p>
+              </button>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+</body>
+
 </html>
